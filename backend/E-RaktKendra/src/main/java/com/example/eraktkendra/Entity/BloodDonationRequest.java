@@ -27,4 +27,11 @@ public class BloodDonationRequest {
 
     @Column(name = "bankId", nullable = false)
     private Long bankId;
+
+    public BloodDonationRequest(User user, String bloodType, Long quantity, Long bankId) {
+        this.user = user;
+        this.bloodType = bloodType;
+        this.quantity = quantity;
+        this.bankId = bankId;
+    }
 }
