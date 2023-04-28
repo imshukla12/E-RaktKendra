@@ -28,4 +28,13 @@ public class BloodRequest {
 
     @Column(name = "total_cost", nullable = false)
     private Long totalCost;
+
+    //---------------------------------------- Constructor -------------------------------------------------------------
+    public BloodRequest(User userId, String bloodType, Long quantity, Long totalCost) {
+        this.userId = userId;
+        this.bloodType = bloodType;
+        this.quantity = quantity;
+        this.totalCost = totalCost;
+    }
+
 }

@@ -28,6 +28,7 @@ public class BloodDonationRequest {
     @Column(name = "bankId", nullable = false)
     private Long bankId;
 
+    //--------------------------------------- Constructor --------------------------------------------------------------
     public BloodDonationRequest(User user, String bloodType, Long quantity, Long bankId) {
         this.user = user;
         this.bloodType = bloodType;
