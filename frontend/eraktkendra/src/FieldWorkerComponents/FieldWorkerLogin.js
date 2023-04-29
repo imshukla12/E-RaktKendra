@@ -3,11 +3,11 @@ import Navbar from "../components/Navbar";
 import logo from "../images/GradientLogo.png";
 import { useNavigate } from "react-router-dom";
 
-const UserLogin = () => {
+const FieldWorkerLogin = () => {
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    navigate(`/user`);
+    navigate(`/fieldWorker`);
   };
 
   return (
@@ -20,7 +20,7 @@ const UserLogin = () => {
           <div className="text-center w-full">
             <img className="mx-auto w-48" src={logo} alt="logo" />
             <h4 className="mb-4 pb-1 text-3xl font-serif font-bold text-red-700 mt-8 border-b border-solid border-gray-900">
-              User Login Portal
+              FieldWorker Login Portal
             </h4>
           </div>
           <form className="w-4/5 p-4 font-serif flex flex-col justify-center items-center">
@@ -65,12 +65,6 @@ const UserLogin = () => {
                 LogIn
               </button>
             </div>
-            <div className="relative z-0 w-full mb-6 group flex flex-row items-center justify-center">
-              <p class="mb-0 mr-2">Don't have an account?</p>
-              <a href="/register" className="text-blue-500 hover:text-blue-900">
-                Register
-              </a>
-            </div>
           </form>
         </div>
       </div>
@@ -78,4 +72,4 @@ const UserLogin = () => {
   );
 };
 
-export default UserLogin;
+export default FieldWorkerLogin;

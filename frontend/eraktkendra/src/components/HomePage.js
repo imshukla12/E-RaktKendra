@@ -7,7 +7,7 @@ const HomePage = () => {
   const navigate = useNavigate()
 
   const handleFieldWorker = () => {
-    navigate(`/fieldWorker`)
+    navigate(`/fieldWorkerLogin`)
   }
 
   const handleUser = () => {
@@ -18,7 +18,7 @@ const HomePage = () => {
     <div>
       <Navbar/>
       <div className='flex flex-row justify-evenly space-x-6 items-center mt-6 p-4'>
-        <button className='bg-red-600 text-white rounded-lg px-2 py-2' onClick={handleUser}>USer</button>
+        <button className='bg-red-600 text-white rounded-lg px-2 py-2' onClick={handleUser}>User</button>
         <button className='bg-red-600 text-white rounded-lg px-2 py-2' onClick={handleFieldWorker}>FieldWorker</button>
       </div>
     </div>

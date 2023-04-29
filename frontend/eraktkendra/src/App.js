@@ -2,6 +2,7 @@ import React from 'react'
 import "./App.css"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './components/HomePage'
+import FieldWorkerLogin from './FieldWorkerComponents/FieldWorkerLogin'
 import FieldWorkerDashboard from './FieldWorkerComponents/FieldWorkerDashboard'
 import UserLogin from './UserComponents/UserLogin'
 import UserDashboard from './UserComponents/UserDashboard'
@@ -19,6 +20,7 @@ const App = () => {
 
         {/* FieldWorker */}
         <Route path='/fieldWorker' element = {<FieldWorkerDashboard/>} />
+        <Route path='/fieldWorkerLogin' element = {<FieldWorkerLogin/>} />
 
       </Routes>
       </BrowserRouter>
